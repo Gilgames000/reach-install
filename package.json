@@ -1,0 +1,22 @@
+{
+    "name": "reach-installer",
+    "description": "A Node.js installer for the Reach command line tool.",
+    "version": "0.1.1",
+    "author": "Gilgameš",
+    "license": "MIT",
+    "keywords": [
+        "install",
+        "installer",
+        "reach",
+        "reach-sh"
+    ],
+    "repository": "https://github.com/Gilgames000/reach-installer",
+    "main": "index.js",
+    "bin": {
+        "reach": "./bin/reach"
+    },
+    "scripts": {
+        "preinstall": "node ./install.js",
+        "prepublishOnly": "rm -f ./bin/reach"
+    }
+}
